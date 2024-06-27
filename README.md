@@ -74,11 +74,11 @@ This Weather Website is a web-based application designed to provide users with c
 ### How to Use
 
 1. **Clone the repository**:
-   ```
+   ```bash
    git clone https://github.com/aryanraw/Bharat-Intern-internship.git
    ```
 2. **Navigate to the project directory**:
-   ```
+   ```bash
    cd Bharat-Intern-internship
    cd task 2
    ```
