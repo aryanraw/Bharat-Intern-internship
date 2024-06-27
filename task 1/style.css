@@ -1,0 +1,187 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9472;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #282828;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#welcome .welcome-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#welcome .profile-image {
+    margin-bottom: 20px;
+}
+
+#welcome .profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #ff9472;
+}
+
+#welcome .welcome-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#welcome .welcome-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-bar span {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.progress {
+    background: #333333;
+    border-radius: 20px;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #ff9472;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    color: #ff9472;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9472;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f2709c;
+}
